@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: chat-space0_production
-  username: chat-space0
+  username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
