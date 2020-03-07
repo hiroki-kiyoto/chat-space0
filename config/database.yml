@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: chat-space0_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
